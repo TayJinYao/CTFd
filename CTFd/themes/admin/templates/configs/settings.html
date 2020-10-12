@@ -90,6 +90,40 @@
 		</div>
 
 		<div class="form-group">
+			<label>
+				Access Key Visibility<br>
+				<small class="form-text text-muted">
+					Control whether users is able to see the access key
+				</small>
+			</label>
+			<select class="form-control custom-select" name="accesskey_visibility">
+				<option value="hidden" {% if accesskey_visibility == 'hidden' %}selected{% endif %}>
+					Hidden
+				</option>
+				<option value="admins" {% if accesskey_visibility == 'admins' %}selected{% endif %}>
+					Admins Only
+				</option>
+			</select>
+		</div>
+
+		<div class="form-group">
+			<label>
+				Secret Key Visibility<br>
+				<small class="form-text text-muted">
+					Control whether users is able to see the secret key
+				</small>
+			</label>
+			<select class="form-control custom-select" name="secretkey_visibility">
+				<option value="hidden" {% if secretkey_visibility == 'hidden' %}selected{% endif %}>
+					Hidden
+				</option>
+				<option value="admins" {% if secretkey_visibility == 'admins' %}selected{% endif %}>
+					Admins Only
+				</option>
+			</select>
+		</div>
+
+		<div class="form-group">
 			<div class="form-check">
 				<label>
 					<input id="paused" name="paused" type="checkbox" {% if paused %}checked{% endif %}>

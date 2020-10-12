@@ -81,6 +81,8 @@
 						<th class="sort-col text-center px-0"><b>Verified</b></th>
 						<th class="sort-col text-center px-0"><b>Hidden</b></th>
 						<th class="sort-col text-center px-0"><b>Banned</b></th>
+						<th class="d-md-table-cell d-lg-table-cell sort-col text-center"><b>Access Key</b></th>
+						<th class="d-md-table-cell d-lg-table-cell sort-col text-center"><b>Secret Key</b></th>
 					</tr>
 				</thead>
 				<tbody>
@@ -142,6 +144,16 @@
 						<td class="team-banned d-md-table-cell d-lg-table-cell text-center" value="{{ user.banned }}">
 							{% if user.banned %}
 								<span class="badge badge-danger">banned</span>
+							{% endif %}
+						</td>
+						<td class="team-banned d-md-table-cell d-lg-table-cell text-center" value="{{ user.accesskey }}">
+							{% if user.accesskey %}
+								<span class="badge badge-primary">accesskey</span>
+							{% endif %}
+						</td>
+						<td class="team-banned d-md-table-cell d-lg-table-cell text-center" value="{{ user.secretkey }}">
+							{% if user.secretkey %}
+								<span class="badge badge-primary">secretkey</span>
 							{% endif %}
 						</td>
 					</tr>
