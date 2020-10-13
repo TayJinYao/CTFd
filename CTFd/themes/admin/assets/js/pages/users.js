@@ -61,6 +61,22 @@ function bulkEditUsers(_event) {
           <option value="false">False</option>
         </select>
       </div>
+      <div class="form-group">
+        <label>AccessKey</label>
+        <select name="accesskey" data-initial="">
+          <option value="">--</option>
+          <option value="true">True</option>
+          <option value="false">False</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>SecretKey</label>
+        <select name="secretkey" data-initial="">
+          <option value="">--</option>
+          <option value="true">True</option>
+          <option value="false">False</option>
+        </select>
+      </div>
     </form>
     `),
     button: "Submit",
