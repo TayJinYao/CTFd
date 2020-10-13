@@ -270,6 +270,8 @@ class Users(db.Model):
     country = db.Column(db.String(32))
     bracket = db.Column(db.String(32))
     hidden = db.Column(db.Boolean, default=False)
+    banned = db.Column(db.Boolean, default=False)
+    verified = db.Column(db.Boolean, default=False)
 
     # Relationship for Teams
     team_id = db.Column(db.Integer, db.ForeignKey("teams.id"))
