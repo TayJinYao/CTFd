@@ -100,6 +100,12 @@
 			{% if user.banned %}
 				<span class="badge badge-danger">banned</span>
 			{% endif %}
+			{% if user.accesskey %}
+				<span class="badge badge-primary">accesskey</span>
+			{% endif %}
+			{% if user.secretkey %}
+				<span class="badge badge-primary">secretkey</span>
+			{% endif %}
 		</div>
 
 			{% if user.affiliation %}

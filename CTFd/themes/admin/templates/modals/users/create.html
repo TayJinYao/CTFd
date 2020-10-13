@@ -47,6 +47,14 @@
 			{{ form.banned(class="form-check-input") }}
 			{{ form.banned.label(class="form-check-label") }}
 		</div>
+		<div class="form-check form-check-inline">
+			{{ form.accesskey(class="form-check-input") }}
+			{{ form.accesskey.label(class="form-check-label") }}
+		</div>
+		<div class="form-check form-check-inline">
+			{{ form.secretkey(class="form-check-input") }}
+			{{ form.secretkey.label(class="form-check-label") }}
+		</div>
 	</div>
 
 	{% if can_send_mail() %}
