@@ -132,6 +132,8 @@ def test_api_users_post_admin_with_attributes():
             assert user.banned
             assert user.hidden
             assert user.verified
+            assert user.accesskey
+            assert user.secretkey
     destroy_ctfd(app)
 
 
