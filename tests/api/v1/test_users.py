@@ -121,8 +121,6 @@ def test_api_users_post_admin_with_attributes():
                     "banned": True,
                     "hidden": True,
                     "verified": True,
-                    "AccessKey": True,
-                    "SecretKey": True,
                 },
             )
             assert r.status_code == 200

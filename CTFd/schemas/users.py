@@ -345,8 +345,6 @@ class UserSchema(ma.ModelSchema):
             "password",
             "type",
             "verified",
-            "accesskey",
-            "secretkey",
             "fields",
         ],
     }
