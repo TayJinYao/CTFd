@@ -123,6 +123,8 @@ class UserBaseForm(BaseForm):
     verified = BooleanField("Verified")
     hidden = BooleanField("Hidden")
     banned = BooleanField("Banned")
+    accesskey = BooleanField("AccessKey")
+    secretkey = BooleanField("SecretKey")
     submit = SubmitField("Submit")
 
 
