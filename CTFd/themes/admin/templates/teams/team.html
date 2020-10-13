@@ -115,6 +115,12 @@
 			{% if team.banned %}
 				<span class="badge badge-danger">banned</span>
 			{% endif %}
+			{% if team.accesskey %}
+				<span class="badge badge-primary">accesskey</span>
+			{% endif %}
+			{% if team.secretkey %}
+				<span class="badge badge-primary">secretkey</span>
+			{% endif %}
 		</div>
 
 		{% if team.oauth_id %}
