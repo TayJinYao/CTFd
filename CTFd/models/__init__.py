@@ -272,8 +272,6 @@ class Users(db.Model):
     hidden = db.Column(db.Boolean, default=False)
     banned = db.Column(db.Boolean, default=False)
     verified = db.Column(db.Boolean, default=False)
-    accesskey = db.Column(db.Boolean, default=False)
-    secretkey = db.Column(db.Boolean, default=False)
 
     # Relationship for Teams
     team_id = db.Column(db.Integer, db.ForeignKey("teams.id"))
